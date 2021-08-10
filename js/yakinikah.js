@@ -5,7 +5,7 @@ $(document).ready(function () {
 		event.preventDefault();
 		var form_data = $(this).serialize();
 		$.ajax({
-			url: "add_comment.php",
+			url: "https://yakinikah.com/i/ifattrydo/add_comment.php",
 			method: "POST",
 			data: form_data,
 			dataType: "JSON",
@@ -22,7 +22,7 @@ $(document).ready(function () {
 	load_comment();
 	function load_comment() {
 		$.ajax({
-			url: "fetch_comment.php",
+			url: "https://yakinikah.com/i/ifattrydo/fetch_comment.php",
 			method: "POST",
 			success: function (data) {
 				$('#display_comment').html(data);
